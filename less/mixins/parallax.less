@@ -1,0 +1,17 @@
+.parallax(
+	@imgurl: 'https://images.unsplash.com/photo-1535087419977-e933e68008ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a90b5df99c96d112c26c2dd74852784a&auto=format&fit=crop&w=885&q=80',
+	@height: 100vh
+) {
+	@image: url( @imgurl );
+	/* The image used */
+	background-image: @image;
+
+	/* Set a specific height */
+	height: @height;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed    ;
+	background-position  : center   ;
+	background-repeat    : no-repeat;
+	background-size      : cover    ;
+}
